@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula Bootstrap 5.3 - Formulários</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="mb-4">Laboratório de Formulários</h2>
+
+        <form class="mb-5 border-bottom pb-4">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label for="nomeFantasia" class="form-label">Nome Fantasia ou primeiro nome</label>
+              <input type="text" class="form-control py-2" id="nomeFantasia">
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-label">Pessoa</div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pessoa" id="pessoaFisica" value="fisica">
+                <label class="form-check-label" for="pessoaFisica">Física</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pessoa" id="pessoaJuridica" value="juridica">
+                <label class="form-check-label" for="pessoaJuridica">Jurídica</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-8">
+              <label for="razao" class="form-label">Razão</label>
+
+              <input type="text" class="form-control py-2" id="razao">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <label for="cnpj" class="form-label">CNPJ</label>
+              <input type="text" class="form-control py-2" id="cnpj" placeholder="00.000.000/0000-00">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-8">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control py-2" id="endereco">
+            </div>
+
+            <div class="col-md-4">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control py-2" id="bairro">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control py-2" id="cidade">
+            </div>
+            <div class="col-md-3">
+              <label for="estado" class="form-label">Estado</label>
+              <select class="form-select py-2" id="estado">
+                <option value="MG" selected>Minas Gerais</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cep" class="form-label">CEP</label>
+              <input type="text" class="form-control py-2" id="cep" placeholder="00000-000">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="text" class="form-control py-2" id="telefone">
+            </div>
+            <div class="col-md-4">
+              <label for="celular" class="form-label">Celular</label>
+              <input type="text" class="form-control py-2" id="celular">
+            </div>
+            <div class="col-md-4">
+              <label for="fax" class="form-label">Fax</label>
+              <input type="text" class="form-control py-2" id="fax">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="contato" class="form-label">Contato</label>
+              <input type="text" class="form-control py-2" id="contato">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control py-2" id="email">
+            </div>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="receberEmails" checked>
+                <label class="form-check-label" for="receberEmails">
+                  Receber e-mails de aviso sobre novas licitações
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-12">
+              <div class="form-label">Tipo de empresa</div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoEmpresa" id="microEmpresa" value="micro">
+                <label class="form-check-label" for="microEmpresa">
+                  MICRO EMPRESAS / EMPRESAS DE PEQUENO PORTE
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoEmpresa" id="demaisEmpresas" value="demais">
+                <label class="form-check-label" for="demaisEmpresas">
+                  DEMAIS FORMAS DE CONSTITUIÇÃO
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary px-4 py-2">Salvar cadastro</button>
+          </div>
+
+          <p class="mt-4 mb-0">
+            ATENÇÃO: Este cadastro não substitui o cadastro de fornecedores do município de São Sebastião do Paraíso
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
